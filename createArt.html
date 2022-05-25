@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Cat: CreateArt</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tiny.cloud/1/7jsmm0v5x69ab6u222jlakxkx05t43g9rv5gfr933wyd7s7c/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="cat.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+</head>
+
+<body style="background-color: #093685; color: white">
+    <div class="container" style="background-color: black">
+        <div class="container">
+            <h1 style="text-align: center; color: #64065f; font-size: 6em">
+                <font font face="Impact">Cat Blog</font>
+            </h1>
+            <hr />
+            <div class="navbar">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html" style="color: #038a75">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" style="color: #038a75">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="createArt.html" style="color: #038a75">Create new Article</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <select id="selectCat">
+                <option>Choose a Cat</option>
+            </select>
+        </div>
+        <div>
+            <form method="post">
+                <input type="text" name="title" placeholder="Type title here" />
+                <textarea id="here" name="content">
+                </textarea>
+                <input type="hidden" />
+                <input type="submit" value="Submit Article" />
+            </form>
+        </div>
+    </div>
+    <script src="catjs.js"></script>
+</body>
+
+</html>

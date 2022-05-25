@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>FantasyFB: Login</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link rel="stylesheet" href="cat.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+
+    <body style = "background-color: #093685; color: white">
+        <div class="container" style = "background-color: black">
+            <div class="container">
+                <h1 style="text-align: center; color: #64065f; font-size: 6em"><font font face="Impact">Cat Blog</font></h1>
+                <hr/>
+                
+                <div class="navbar">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="home.html" style = "color: #038a75">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html" style = "color: #038a75">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="createArt.html" style = "color: #038a75">Create new Article</a>
+                        </li>
+                    </ul>    
+                </div>
+
+                <h2>Login Page</h2>
+
+                <form class="form-horizontal" method="post">
+                    <div class="form-group">
+                        <label for="username" class="col-md-4 control-label">Username:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Username"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-md-4 control-label">Password:</label>
+                        <div class="col-md-8">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-4 col-md-8">
+                            <button style="background-color: black; border: none" onclick="play()">
+
+                                <input type="submit" class="btn btn-default" value="Sign In"/>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    If you don't have an account <a href="register.html">click here</a> to create an account
+                </div>
+
+            </div>
+           
+        </div>
+        <script src="catjs.js"></script>
+    </body>
+</html>
