@@ -23,9 +23,9 @@ export class LoginComponent implements OnInit {
   }
 
   submitLogin(){
-    let url = '/api/login';
+    let url = '/8api/login';
     this.http.post<any>(url, {
-      email: this.model.email,
+      username: this.model.username,
       password: this.model.password
     }).subscribe(res => {
       if(res) {

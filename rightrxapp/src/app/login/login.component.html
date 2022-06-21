@@ -12,8 +12,8 @@
         <form (ngSubmit)="submitLogin()" #loginForm="ngForm" >
             <div class="field">
                 <label class="label">Email</label>
-                <input type="email" name="email" class="input" style="width: 400px;" [(ngModel)]="model.email" #emailInput="ngModel" required email>
-                <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">Your Email is required and needs to be a valid email.</div>
+                <input type="text" name="username" class="input" style="width: 400px;" [(ngModel)]="model.username" #usernameInput="ngModel" required>
+                <div class="help is-error" *ngIf="usernameInput.invalid && usernameInput.touched">Your Email is required and needs to be a valid email.</div>
             </div>
             <div class="field">
                 <label class="label">Password</label>
