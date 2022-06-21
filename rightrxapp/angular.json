@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "C:/Users/rodne/OneDrive/Documents/TekSystemsRepo/rightrxapp/node_modules/bulma/css/bulma.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -65,9 +66,11 @@
           "configurations": {
             "production": {
               "browserTarget": "rightrxapp:build:production"
+              
             },
             "development": {
-              "browserTarget": "rightrxapp:build:development"
+              "browserTarget": "rightrxapp:build:development",
+              "proxyConfig": "C:/Users/rodne/OneDrive/Documents/TekSystemsRepo/rightrx/src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

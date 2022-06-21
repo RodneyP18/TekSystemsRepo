@@ -1,0 +1,13 @@
+.hero {
+    background-image: url('/assets/bluepull.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+  }
+
+.title{
+  color: rgb(21, 27, 105) !important;
+  height: 200px  !important;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 150px;
+}
+

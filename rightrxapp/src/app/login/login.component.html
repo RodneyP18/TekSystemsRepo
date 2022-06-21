@@ -1,0 +1,26 @@
+<section class="hero is-bold is-success">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Log In!</h1>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container has-text-centered">
+
+        <form (ngSubmit)="submitLogin()" #loginForm="ngForm" >
+            <div class="field">
+                <label class="label">Email</label>
+                <input type="email" name="email" class="input" style="width: 400px;" [(ngModel)]="model.email" #emailInput="ngModel" required email>
+                <div class="help is-error" *ngIf="emailInput.invalid && emailInput.touched">Your Email is required and needs to be a valid email.</div>
+            </div>
+            <div class="field">
+                <label class="label">Password</label>
+                <input type="password" name="password" class="input" style="width: 400px;" [(ngModel)]="model.password" #passInput="ngModel" required password>
+                <div class="help is-error" *ngIf="passInput.invalid && passInput.touched">Your password is required.</div>
+            </div>
+            <button type="submit" class="button is-large is-warning" [disabled]="loginForm.invalid">Submit</button>
+        </form>
+    </div>
+</section>
