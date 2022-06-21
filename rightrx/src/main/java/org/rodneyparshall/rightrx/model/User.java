@@ -3,6 +3,7 @@ package org.rodneyparshall.rightrx.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,16 +14,13 @@ import javax.persistence.Id;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Patient {
+public class User{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long patientId;
-
-    private String firstName;
-    private String lastName;
-    private String email;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long userId;
     private String username;
     private String password;
+    private String role;
 
 }

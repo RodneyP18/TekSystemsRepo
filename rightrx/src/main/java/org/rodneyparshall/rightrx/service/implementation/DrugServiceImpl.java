@@ -8,6 +8,7 @@ import org.rodneyparshall.rightrx.service.DrugService;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @RequiredArgsConstructor
 @Service
@@ -25,13 +26,11 @@ public class DrugServiceImpl implements DrugService {
 
     @Override
     public Drug get(Long drugId) {
-
         return drugRepo.findById(drugId).get();
     }
 
     @Override
     public Drug update(Drug drug) {
-
         return drugRepo.save(drug);
     }
 
@@ -39,5 +38,10 @@ public class DrugServiceImpl implements DrugService {
     public Boolean delete(Long drugId) {
         drugRepo.deleteById(drugId);
         return Boolean.TRUE;
+    }
+
+    @Override
+    public List<Drug> getAll() {
+        return drugRepo.findAll();
     }
 }

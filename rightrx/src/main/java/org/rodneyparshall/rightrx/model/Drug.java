@@ -16,9 +16,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 public class Drug {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long drugId;
-
     private String name;
-    private Dosage dosage;
 }
