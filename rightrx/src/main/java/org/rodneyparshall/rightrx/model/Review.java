@@ -3,9 +3,11 @@ package org.rodneyparshall.rightrx.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.rodneyparshall.rightrx.domain.User;
 import org.rodneyparshall.rightrx.enumeration.Dosage;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Data
@@ -14,7 +16,7 @@ import javax.persistence.*;
 public class Review {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long reviewId;
 
     @ManyToOne

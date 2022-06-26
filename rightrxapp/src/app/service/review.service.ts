@@ -9,20 +9,18 @@ import { Review } from '../model/review';
 })
 export class ReviewService {
 
-
   private host = environment.apiBaseUrl;
 
   constructor(private http: HttpClient) { }
 
 
-  public getReviews(): Observable<Review[] | HttpErrorResponse>{
+  public getReviews(): Observable<Review[]>{
     return this.http.get<Review[]>(`${this.host}/review/getReviews`);
   }
 
-  public addReview(formData: FormData): Observable<Review | HttpErrorResponse>{
+  public addReview(formData: FormData): Observable<Review>{
     return this.http.put<Review>(`${this.host}/review/add`, formData);
   }
-
 
   public getReviewsFromLocalCache(): Review[]{
     if(localStorage.getItem('reviews')){
@@ -38,7 +36,11 @@ export class ReviewService {
     return null as any;
   }
 
-  public addReviewsToLocalCache(review: Review[]): void{
+  public addReviewsToLocalCache(reviews: Review[]): void{
+    localStorage.setItem('reviews', JSON.stringify(reviews));
+  }
+
+  public addReviewToLocalCache(review: Review): void{
     localStorage.setItem('review', JSON.stringify(review));
   }
 

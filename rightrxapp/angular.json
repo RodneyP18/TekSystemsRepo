@@ -69,8 +69,7 @@
               
             },
             "development": {
-              "browserTarget": "rightrxapp:build:development",
-              "proxyConfig": "C:/Users/rodne/OneDrive/Documents/TekSystemsRepo/rightrx/src/proxy.conf.json"
+              "browserTarget": "rightrxapp:build:development"
             }
           },
           "defaultConfiguration": "development"

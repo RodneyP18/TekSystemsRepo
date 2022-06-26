@@ -7,9 +7,8 @@ import java.util.List;
 
 public interface DrugService {
     Drug create(Drug drug);
-    Drug get(Long drugId);
+    Drug findByDrugName(String drugName);
     Drug update(Drug drug);
     Boolean delete(Long drugId);
-
     List<Drug> getAll();
 }

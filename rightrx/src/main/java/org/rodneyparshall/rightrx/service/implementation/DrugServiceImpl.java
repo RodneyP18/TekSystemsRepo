@@ -25,10 +25,9 @@ public class DrugServiceImpl implements DrugService {
     }
 
     @Override
-    public Drug get(Long drugId) {
-        return drugRepo.findById(drugId).get();
+    public Drug findByDrugName(String drugName) {
+        return drugRepo.findByName(drugName);
     }
-
     @Override
     public Drug update(Drug drug) {
         return drugRepo.save(drug);

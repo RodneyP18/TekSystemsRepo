@@ -1,4 +1,4 @@
-package org.rodneyparshall.rightrx.dto;
+package org.rodneyparshall.rightrx.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.http.HttpStatus;

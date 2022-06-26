@@ -1,1 +1,100 @@
-<p>review works!</p>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+	</head>
+	<body>
+	<div>
+
+	</div>
+		<nav class="navbar is-white">
+			<div class="container">
+				<div class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item is-active" href="#">Popular</a>
+						<a class="navbar-item" href="#">Recent</a>
+					</div>
+					<div class="navbar-end">
+						<!-- <form #searchForm="ngForm" class="navbar-item">
+							<input name="searchReviewName" class="form-control" ngModel
+                            (ngModelChange)="searchReviews()" type="search" placeholder="Search forum...">
+                        </form> -->
+					</div>
+				</div>
+			</div>
+		</nav>
+        <div>
+        </div>
+		<section class="container">
+			<div class="columns">
+				<div class="column is-3">
+					<a class="button is-primary is-block is-alt is-large" href="#">New Post</a>
+					<aside class="menu">
+						<p class="menu-label">
+							Tags
+						</p>
+						<ul class="menu-list">
+							<li><span class="tag is-primary is-medium ">Ibuprofen</span></li>
+							<li><span class="tag is-link is-medium ">Levothyroxine</span></li>
+							<li><span class="tag is-dark is-medium ">Atorvastatin</span></li>
+							<li><span class="tag is-success is-medium ">Lisinopril</span></li>
+							<li><span class="tag is-warning is-medium ">Metformin</span></li>
+						</ul>
+					</aside>
+				</div>
+				<table class="column is-9">
+					<div class="box content">
+						<article class="post">
+							<h4>Recently prescribed Metformin</h4>
+							<div class="media">
+								<div class="media-left">
+									<p class="image is-32x32">
+										<img src="http://bulma.io/images/placeholders/128x128.png">
+									</p>
+								</div>
+								<div class="media-content">
+									<div class="content">
+										<p>
+											<a href="#">@jsmith</a> replied 34 minutes ago &nbsp;
+											<span class="tag">Question</span>
+										</p>
+									</div>
+								</div>
+								<div class="media-right">
+									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+								</div>
+							</div>
+						</article>
+						<article class="post">
+							<h4>My experience</h4>
+							<div class="media">
+								<div class="media-left">
+									<p class="image is-32x32">
+										<img src="http://bulma.io/images/placeholders/128x128.png">
+									</p>
+								</div>
+								<div class="media-content">
+									<div class="content">
+										<p>
+											<a href="#">@jsmith</a> replied 53 minutes ago &nbsp;
+											<span class="tag">Question</span>
+										</p>
+									</div>
+								</div>
+								<div class="media-right">
+									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+								</div>
+							</div>
+						</article>
+					</div>
+				</table>
+			</div>
+		</section>
+		<script async type="text/javascript" src="../js/bulma.js"></script>
+	</body>
+</html>

@@ -1,2 +1,7 @@
-package org.rodneyparshall.rightrx.exception.domain;public class UsernameExistsException {
+package org.rodneyparshall.rightrx.exception.domain;
+
+public class UsernameExistsException extends Exception{
+    public UsernameExistsException(String message) {
+        super(message);
+    }
 }

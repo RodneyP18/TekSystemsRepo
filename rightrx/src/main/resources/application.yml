@@ -1,24 +1,51 @@
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3307/rightrx?serverTimezone=America/Chicago&useSSL=false&allowPublicKeyRetrieval=true
-spring.datasource.username=root
-spring.datasource.password=rightrxpw
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
-spring.jpa.generate-ddl=true
-spring.jpa.hibernate.ddl-auto=update
+#Commented out the properities due to changing to .yml file
 
-#server:
-    #port:8080
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#spring.datasource.url=jdbc:mysql://localhost:3307/rightrx?serverTimezone=America/Chicago&useSSL=false&allowPublicKeyRetrieval=true
+#spring.datasource.username=root
+#spring.datasource.password=rightrxpw
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+#spring.jpa.generate-ddl=true
+#spring.jpa.hibernate.ddl-auto=update
 
-#spring:
-    #datasource:
-        #url:jdbc:mysql://localhost:3307/rightrx
-        #password: rightrxpw
-        #username: root
 
-    #jpa:
-        #show-sql: true
-        #hibernate:
-            #ddl-auto: update
-        #properties:
-            #hibernate:
-                #dialect: org.hibernate.dialect.MySQL8Dialect
+jwt:
+    secret: '[a-zA-Z0-9._]^+$Guidelines89797987forAlphabeticalArraNumeralsandOtherSymbo$'
+server:
+    port:8080
+
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3307/rightrx
+        password: rightrxpw
+        username: root
+
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
+
+# This commented portion is example code to override the White Page Error when a page is not found.
+
+    mvc:
+        throw-exception-if-no-handler-found: true
+    web:
+        resources:
+            add-mappings: false
+
+# Set Logging to save in rightrx.log file and formats the output.
+
+logging:
+    level:
+        root: ERROR
+        org.springframework.web: ERROR
+        org.rodneyparshall.rightrx: DEBUG
+        org.hibernate: ERROR
+    file:
+        name: C:/Users/rodne/OneDrive/Documents/TekSystemsRepo/Rightrx/log/rightrx.log
+    pattern:
+        console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+        file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

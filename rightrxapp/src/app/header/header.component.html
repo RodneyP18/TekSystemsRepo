@@ -43,11 +43,21 @@
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <a class="button is-info" href="/register">
+            <a *ngIf="!isLoggedIn()" class="button is-info" href="/register">
               <strong>Register</strong>
             </a>
-            <a class="button is-light" href="/login">
+            <a *ngIf="!isLoggedIn()" class="button is-light" href="/login">
               Log in
+            </a>
+            <a *ngIf="isLoggedIn()" class="button is-info" href="" >
+              <strong>
+                Welcome, {{user?.username}}
+              </strong>
+            </a>
+            <a *ngIf="isLoggedIn()" class="button is-danger" href="" (click)="logout()">
+              <strong>
+                Logout
+              </strong>
             </a>
           </div>
         </div>

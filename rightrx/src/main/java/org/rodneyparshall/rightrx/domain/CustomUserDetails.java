@@ -1,11 +1,11 @@
-package org.rodneyparshall.rightrx.service.implementation;
+package org.rodneyparshall.rightrx.domain;
 
-import org.rodneyparshall.rightrx.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 import static java.util.Arrays.stream;
 
@@ -21,7 +21,7 @@ public class CustomUserDetails implements UserDetails{
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return (Collection<? extends GrantedAuthority>) stream(this.user.getAuthorities()).map(SimpleGrantedAuthority::new);
+        return stream(this.user.getAuthorities()).map(SimpleGrantedAuthority::new).collect(Collectors.toList());
     }
 
     @Override

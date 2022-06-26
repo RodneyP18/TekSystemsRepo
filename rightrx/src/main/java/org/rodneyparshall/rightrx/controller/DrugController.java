@@ -24,9 +24,9 @@ public class DrugController {
         return new ResponseEntity<>(drugs, HttpStatus.OK);
     }
 
-    @GetMapping(path = "/getDrug/{id}")
-    public ResponseEntity<Drug> getDrug(@PathVariable("id") Long id){
-        Drug drug = drugService.get(id);
+    @GetMapping(path = "/getDrug/{drugName}")
+    public ResponseEntity<Drug> getDrug(@PathVariable("drugName") String drugName){
+        Drug drug = drugService.findByDrugName(drugName);
         return new ResponseEntity<>(drug, HttpStatus.OK);
     }
 

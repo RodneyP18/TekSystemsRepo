@@ -1,16 +1,16 @@
-package org.rodneyparshall.rightrx;
+package org.rodneyparshall.rightrx.configuration;
 
 
-
-import org.rodneyparshall.rightrx.service.CustomUserDetailsService;
-import org.rodneyparshall.rightrx.session.SessionFilter;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.rodneyparshall.rightrx.filter.JWTAuthorizationFilter;
+import org.rodneyparshall.rightrx.filter.JwtAccessDeniedHandler;
+import org.rodneyparshall.rightrx.filter.JwtAuthenticationEntryPoint;
 import org.springframework.context.annotation.Bean;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -18,68 +18,53 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import javax.servlet.http.HttpServletResponse;
+import static org.rodneyparshall.rightrx.constant.SecurityConstant.PUBLIC_URLS;
+import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
 
 
 @SuppressWarnings("deprecation")
 @Configuration
 @EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
-    @Autowired
-    private SessionFilter sessionFilter;
 
-    @Autowired
-    CustomUserDetailsService customUserDetailsService;
+    private UserDetailsService userDetailsService;
+    private JWTAuthorizationFilter jwtAuthorizationFilter;
+    private JwtAccessDeniedHandler jwtAccessDeniedHandler;
+    private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    @Bean
-    public BCryptPasswordEncoder passwordEncoder(){
-        return new BCryptPasswordEncoder();
+    public WebSecurityConfig(UserDetailsService userDetailsService,
+                             JWTAuthorizationFilter jwtAuthorizationFilter,
+                             JwtAccessDeniedHandler jwtAccessDeniedHandler,
+                             JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint,
+                             BCryptPasswordEncoder bCryptPasswordEncoder) {
+        this.userDetailsService = userDetailsService;
+        this.jwtAuthorizationFilter = jwtAuthorizationFilter;
+        this.jwtAccessDeniedHandler = jwtAccessDeniedHandler;
+        this.jwtAuthenticationEntryPoint = jwtAuthenticationEntryPoint;
+        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
-
-//    @Bean
-//    public DaoAuthenticationProvider authenticationProvider(){
-//        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
-//        authenticationProvider.setUserDetailsService(userDetailsService());
-//        authenticationProvider.setPasswordEncoder(passwordEncoder());
-//        return authenticationProvider;
-//    }
-
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-        auth.userDetailsService(customUserDetailsService).passwordEncoder(passwordEncoder());
+        auth.userDetailsService(userDetailsService).passwordEncoder(bCryptPasswordEncoder);
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception{
-        http = http.cors().and().csrf().disable();
-        http = http.exceptionHandling().authenticationEntryPoint(
-                (request, response, ex) -> response.sendError(
-                        HttpServletResponse.SC_UNAUTHORIZED,
-                        ex.getMessage())
-
-        ).and();
-        http.authorizeRequests()
-                .antMatchers("/api/login").permitAll()
-                        .anyRequest().authenticated();
-//                .antMatchers(
-//                        "/drug/add",
-//                        "/drug/update",
-//                        "/drug/delete",
-//                        "/review/delete"
-//                ).hasAuthority("ADMIN")
-//                .antMatchers("/review/add",
-//                        "/review/update").hasAnyAuthority("USER", "ADMIN")
-//                .and()
-//                .formLogin().loginPage("/login")
-//                .and()
-//                .logout().logoutSuccessUrl("/").permitAll();
-
-        http.addFilterBefore(sessionFilter, UsernamePasswordAuthenticationFilter.class);
-
+        http.csrf().disable().cors().and()
+                .sessionManagement().sessionCreationPolicy(STATELESS)
+                .and().authorizeRequests().antMatchers(PUBLIC_URLS).permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .exceptionHandling().accessDeniedHandler(jwtAccessDeniedHandler)
+                .authenticationEntryPoint(jwtAuthenticationEntryPoint)
+                .and()
+                .addFilterBefore(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class);
     }
 
-    @Override
     @Bean
+    @Override
     public AuthenticationManager authenticationManagerBean() throws Exception{
         return super.authenticationManagerBean();
     }

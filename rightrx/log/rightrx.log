@@ -31,3 +31,62 @@
 2022-06-25 13:48:27 [restartedMain] INFO  o.r.rightrx.RightrxApplication - No active profile set, falling back to 1 default profile: "default"
 2022-06-25 13:48:28 [restartedMain] DEBUG o.r.r.filter.JWTAuthorizationFilter - Filter 'JWTAuthorizationFilter' configured for use
 2022-06-25 13:48:29 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Started RightrxApplication in 2.108 seconds (JVM running for 2.468)
+2022-06-25 18:59:13 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Starting RightrxApplication using Java 18 on BuddyDell with PID 13844 (C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\Rightrx\target\classes started by rodne in C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\rightrx)
+2022-06-25 18:59:13 [restartedMain] DEBUG o.r.rightrx.RightrxApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-25 18:59:13 [restartedMain] INFO  o.r.rightrx.RightrxApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-25 18:59:14 [restartedMain] DEBUG o.r.r.filter.JWTAuthorizationFilter - Filter 'JWTAuthorizationFilter' configured for use
+2022-06-25 18:59:16 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Started RightrxApplication in 3.606 seconds (JVM running for 4.212)
+2022-06-25 19:01:55 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Starting RightrxApplication using Java 18 on BuddyDell with PID 1876 (C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\Rightrx\target\classes started by rodne in C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\rightrx)
+2022-06-25 19:01:55 [restartedMain] DEBUG o.r.rightrx.RightrxApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-25 19:01:55 [restartedMain] INFO  o.r.rightrx.RightrxApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-25 19:01:56 [restartedMain] DEBUG o.r.r.filter.JWTAuthorizationFilter - Filter 'JWTAuthorizationFilter' configured for use
+2022-06-25 19:01:58 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Started RightrxApplication in 3.366 seconds (JVM running for 4.006)
+2022-06-25 19:06:56 [http-nio-8080-exec-3] ERROR o.r.r.exception.ExceptionHandling - Request method 'GET' not supported
+2022-06-25 19:11:08 [http-nio-8080-exec-5] ERROR o.r.r.exception.ExceptionHandling - Username already exists.
+2022-06-25 19:11:28 [http-nio-8080-exec-2] ERROR o.r.r.s.i.UserServiceImpl - User was not found.rodney
+2022-06-25 19:11:28 [http-nio-8080-exec-2] ERROR o.r.r.exception.ExceptionHandling - Bad credentials
+2022-06-25 19:11:40 [http-nio-8080-exec-6] INFO  o.r.r.s.i.UserServiceImpl - Returning found user by usernameusername
+2022-06-25 19:11:40 [http-nio-8080-exec-6] INFO  o.r.r.controller.UserController - User logged in.
+2022-06-25 19:14:55 [http-nio-8080-exec-9] INFO  o.r.r.s.i.UserServiceImpl - Returning found user by usernameusername3
+2022-06-25 19:14:55 [http-nio-8080-exec-9] INFO  o.r.r.controller.UserController - User logged in.
+2022-06-25 19:27:06 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Starting RightrxApplication using Java 18 on BuddyDell with PID 4504 (C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\Rightrx\target\classes started by rodne in C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\rightrx)
+2022-06-25 19:27:06 [restartedMain] DEBUG o.r.rightrx.RightrxApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-25 19:27:06 [restartedMain] INFO  o.r.rightrx.RightrxApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-25 19:27:07 [restartedMain] DEBUG o.r.r.filter.JWTAuthorizationFilter - Filter 'JWTAuthorizationFilter' configured for use
+2022-06-25 19:27:08 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Started RightrxApplication in 2.558 seconds (JVM running for 3.005)
+2022-06-25 19:27:36 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Starting RightrxApplication using Java 18 on BuddyDell with PID 4712 (C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\Rightrx\target\classes started by rodne in C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\rightrx)
+2022-06-25 19:27:36 [restartedMain] DEBUG o.r.rightrx.RightrxApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-25 19:27:36 [restartedMain] INFO  o.r.rightrx.RightrxApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-25 19:27:37 [restartedMain] DEBUG o.r.r.filter.JWTAuthorizationFilter - Filter 'JWTAuthorizationFilter' configured for use
+2022-06-25 19:27:38 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Started RightrxApplication in 2.463 seconds (JVM running for 2.941)
+2022-06-25 19:27:48 [http-nio-8080-exec-2] ERROR o.r.r.exception.ExceptionHandling - Username already exists.
+2022-06-25 19:27:59 [http-nio-8080-exec-4] INFO  o.r.r.s.i.UserServiceImpl - Returning found user by usernameusername
+2022-06-25 19:27:59 [http-nio-8080-exec-4] INFO  o.r.r.controller.UserController - User logged in.
+2022-06-25 19:28:39 [http-nio-8080-exec-5] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /user/register/vwewv
+2022-06-25 19:44:24 [http-nio-8080-exec-8] ERROR o.r.r.exception.ExceptionHandling - Request method 'GET' not supported
+2022-06-25 19:44:29 [http-nio-8080-exec-9] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /user/
+2022-06-25 19:44:39 [http-nio-8080-exec-10] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /user/getUsers
+2022-06-25 19:45:09 [http-nio-8080-exec-1] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /user/getUser/username
+2022-06-25 19:45:48 [http-nio-8080-exec-2] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /user/getUser/%7Busername%7D
+2022-06-25 19:46:13 [http-nio-8080-exec-3] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /user/getUser/%7Busername3%7D
+2022-06-25 19:46:40 [http-nio-8080-exec-4] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /user/getUser/$%7Busername%7D
+2022-06-25 19:47:49 [http-nio-8080-exec-6] INFO  o.r.r.controller.UserController - Found user by username {username}
+2022-06-25 19:48:06 [http-nio-8080-exec-7] INFO  o.r.r.controller.UserController - Found user by username username
+2022-06-25 19:54:08 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Starting RightrxApplication using Java 18 on BuddyDell with PID 5440 (C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\Rightrx\target\classes started by rodne in C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\rightrx)
+2022-06-25 19:54:08 [restartedMain] DEBUG o.r.rightrx.RightrxApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-25 19:54:08 [restartedMain] INFO  o.r.rightrx.RightrxApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-25 19:54:09 [restartedMain] DEBUG o.r.r.filter.JWTAuthorizationFilter - Filter 'JWTAuthorizationFilter' configured for use
+2022-06-25 19:54:11 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Started RightrxApplication in 2.638 seconds (JVM running for 3.105)
+2022-06-25 20:19:44 [http-nio-8080-exec-3] ERROR o.r.r.s.i.UserServiceImpl - User was not found.rodney
+2022-06-25 20:19:44 [http-nio-8080-exec-3] ERROR o.r.r.exception.ExceptionHandling - Bad credentials
+2022-06-25 20:20:25 [http-nio-8080-exec-5] INFO  o.r.r.s.i.UserServiceImpl - Returning found user by usernameusername
+2022-06-25 20:20:25 [http-nio-8080-exec-5] INFO  o.r.r.controller.UserController - User logged in.
+2022-06-25 20:24:29 [http-nio-8080-exec-8] INFO  o.r.r.s.i.UserServiceImpl - Returning found user by usernameusername
+2022-06-25 20:24:30 [http-nio-8080-exec-8] INFO  o.r.r.controller.UserController - User logged in.
+2022-06-25 20:34:18 [http-nio-8080-exec-1] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /review/getReviews
+2022-06-25 20:37:08 [http-nio-8080-exec-3] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /review/getReviews
+2022-06-25 20:44:23 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Starting RightrxApplication using Java 18 on BuddyDell with PID 15856 (C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\Rightrx\target\classes started by rodne in C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\rightrx)
+2022-06-25 20:44:23 [restartedMain] DEBUG o.r.rightrx.RightrxApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-25 20:44:23 [restartedMain] INFO  o.r.rightrx.RightrxApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-25 20:44:24 [restartedMain] DEBUG o.r.r.filter.JWTAuthorizationFilter - Filter 'JWTAuthorizationFilter' configured for use
+2022-06-25 20:44:25 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Started RightrxApplication in 2.628 seconds (JVM running for 3.117)

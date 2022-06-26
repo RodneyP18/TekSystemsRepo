@@ -13,8 +13,10 @@ import { ContactComponent } from './contact/contact.component';
 import { ReviewComponent } from './review/review.component';
 import { FormsModule } from '@angular/forms';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { UserService } from './user.service';
-import { RequestInterceptor } from './request.interceptor';
+import { UserService } from './service/user.service';
+import { RequestInterceptor } from './interceptor/request.interceptor';
+import { AuthenticationService } from './service/authentication.service';
+import { AuthenticationGuard } from './guard/authentication.guard';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { RequestInterceptor } from './request.interceptor';
     FormsModule,
     HttpClientModule
   ],
-  providers: [UserService,
+  providers: [UserService, AuthenticationService, AuthenticationGuard,
   {provide:HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })

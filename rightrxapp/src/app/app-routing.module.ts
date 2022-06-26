@@ -2,7 +2,7 @@ import { compileClassMetadata } from '@angular/compiler';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { AuthenticationGuard } from './authentication.guard';
+import { AuthenticationGuard } from './guard/authentication.guard';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -27,7 +27,7 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: 'reviews',
+    path: 'review',
     component: ReviewComponent
   },
   {

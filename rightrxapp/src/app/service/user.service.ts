@@ -3,7 +3,6 @@ import { environment } from 'src/environments/environment';
 import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from '../model/user';
-import { JwtHelperService } from '@auth0/angular-jwt';
 import { CustomHttpResponse } from '../model/custom-http-response';
 
 @Injectable({
@@ -18,10 +17,6 @@ export class UserService {
 
   public getUser(): Observable<User | HttpErrorResponse>{
     return this.http.get<User>(`${this.host}/user/getUser`);
-  }
-
-  public registerUser(formData: FormData): Observable<User | HttpErrorResponse>{
-    return this.http.post<User>(`${this.host}/user/register`, formData);
   }
 
   public updateUser(formData: FormData): Observable<User | HttpErrorResponse>{
