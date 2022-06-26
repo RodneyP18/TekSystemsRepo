@@ -90,3 +90,17 @@
 2022-06-25 20:44:23 [restartedMain] INFO  o.r.rightrx.RightrxApplication - No active profile set, falling back to 1 default profile: "default"
 2022-06-25 20:44:24 [restartedMain] DEBUG o.r.r.filter.JWTAuthorizationFilter - Filter 'JWTAuthorizationFilter' configured for use
 2022-06-25 20:44:25 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Started RightrxApplication in 2.628 seconds (JVM running for 3.117)
+2022-06-25 21:03:02 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Starting RightrxApplication using Java 18 on BuddyDell with PID 24284 (C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\Rightrx\target\classes started by rodne in C:\Users\rodne\OneDrive\Documents\TekSystemsRepo\rightrx)
+2022-06-25 21:03:02 [restartedMain] DEBUG o.r.rightrx.RightrxApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2022-06-25 21:03:02 [restartedMain] INFO  o.r.rightrx.RightrxApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-25 21:03:03 [restartedMain] DEBUG o.r.r.filter.JWTAuthorizationFilter - Filter 'JWTAuthorizationFilter' configured for use
+2022-06-25 21:03:04 [restartedMain] INFO  o.r.rightrx.RightrxApplication - Started RightrxApplication in 2.562 seconds (JVM running for 3.022)
+2022-06-25 21:03:51 [http-nio-8080-exec-2] ERROR o.r.r.exception.ExceptionHandling - Username already exists.
+2022-06-25 21:04:01 [http-nio-8080-exec-4] INFO  o.r.r.s.i.UserServiceImpl - Returning found user by username username
+2022-06-25 21:04:01 [http-nio-8080-exec-4] INFO  o.r.r.controller.UserController - User logged in.
+2022-06-25 21:04:01 [http-nio-8080-exec-6] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /review/getReviews
+2022-06-25 21:04:08 [http-nio-8080-exec-8] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /review/getReviews
+2022-06-25 21:16:08 [http-nio-8080-exec-10] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /review/getReviews
+2022-06-25 21:16:17 [http-nio-8080-exec-2] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /review/getReviews
+2022-06-25 21:16:19 [http-nio-8080-exec-3] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /review/getReviews
+2022-06-25 21:16:47 [http-nio-8080-exec-5] ERROR o.r.r.exception.ExceptionHandling - No handler found for GET /review/getReviews
