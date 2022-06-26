@@ -1,3 +1,3 @@
 # TekSystemsRepo
-Repository for projects and Case Study for TekSystems
-Test
+Repository for Case Study with TekSystems
+
