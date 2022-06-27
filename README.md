@@ -16,7 +16,7 @@ Tek Systems Repo Showcasing my capstone project, RightRX.
 
 * My focus for this project was to create a functioning WebService using JWT Authentication. 
 * Currently on the frontend, the only functionality showcases the ability to Register and Login.
-* In the backend though, there is extensive customization pertaining to a custom Httpresponse class from which I have handled all my exceptions.
+* In the backend though, there is customization pertaining to a custom Httpresponse class from which I have handled all my exceptions.
 
 
 ### Requirements met for the project
