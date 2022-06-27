@@ -2,6 +2,8 @@
 
 Tek Systems Repo Showcasing my capstone project, RightRX.
 
+![[RightRXLogo](Rightrxapp\src\assets\logo3.png)](https://github.com/RodneyP18/TekSystemsRepo/blob/main/rightrxapp/src/assets/logo3.png)
+
 ## Programs used to make the appliction:
 
 * Node.js https://nodejs.org/en/
@@ -10,57 +12,39 @@ Tek Systems Repo Showcasing my capstone project, RightRX.
 * Spring Boot starter application. https://start.spring.io/
 *   Dependencies: Lombok, Spring Boot DevTools, Spring Web, Spring Data JPA, Spring Security, MySQL Driver, Java-JWT with auth0
 
-### Prerequisites
+### Overview
 
-![[RightRXLogo](Rightrxapp\src\assets\logo3.png)](https://github.com/RodneyP18/TekSystemsRepo/blob/main/rightrxapp/src/assets/logo3.png)
+* My focus for this project was to create a functioning WebService using JWT Authentication. 
+* Currently on the frontend, the only functionality showcases the ability to Register and Login.
+* In the backend though, there is extensive customization pertaining to a custom Httpresponse class from which I have handled all my exceptions.
 
 
-The things you need before installing the software.
-
-* You need this
-* And you need this
-* Oh, and don't forget this
-
-### Installation
-
-A step by step guide that will tell you how to get the development environment up and running.
+### Requirements met for the project
 
 ```
-$ First step
-$ Another step
-$ Final step
+$ Built with a MVC framework.
+$ Spring Security using JWT Authentication and auth0.
+$ CSS located in frontend Angular application in the Home Component.
+$ Core Java code and Models.
+$ Use of MySQL Database and Hibernate.
+$ Spring Framework with REST.
+$ Use of Typescript in Angular to fulfill Javascript requirement.
+$ All crud methods testable with Postman.
+$ All Tests for the Servives and Repositories are found in the Test folder.
+$ Slf4j logging to a file.
 ```
 
-## Usage
-
-A few examples of useful commands and/or tasks.
+## Challenges
 
 ```
-$ First example
-$ Second example
-$ And keep this in mind
+$ CORS Configuration was new to me and allowed me to understand further configuration a program would need.
+$ Angular's typescript was familiar from learning Javascript, but brought challanges due to a new version release and deprecations.
+$ JWT Token Authentication was new to me and require time to understand and implement the technology.
 ```
 
-## Deployment
 
-Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
-
-### Server
-
-* Live:
-* Release:
-* Development:
-
-### Branches
-
-* Master:
-* Feature:
-* Bugfix:
-* etc...
 
 ## Additional Documentation and Acknowledgments
 
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
+* I'd like to thank Optum, Tek Systems, and Per Scholas for this opportunity to add some new technology to my portfolio.
+
