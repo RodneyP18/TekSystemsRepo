@@ -12,7 +12,7 @@ Tek Systems Repo Showcasing my capstone project, RightRX.
 
 ### Prerequisites
 
-![RightRXLogo](Rightrxapp\src\assets\logo3.png)
+![[RightRXLogo](Rightrxapp\src\assets\logo3.png)](https://github.com/RodneyP18/TekSystemsRepo/blob/main/rightrxapp/src/assets/logo3.png)
 
 
 The things you need before installing the software.
