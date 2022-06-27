@@ -1,12 +1,19 @@
 # Project Title
 
-A short description about the project and/or client.
+Tek Systems Repo Showcasing my capstone project, RightRX.
 
-## Getting Started
+## Programs used to make the appliction:
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+* Node.js https://nodejs.org/en/
+* Angular CLI by running this command "npm install -g @angular/cli" in your command line once Node.js is installed.
+* MySQL Server and Workbench
+* Spring Boot starter application. https://start.spring.io/
+*   Dependencies: Lombok, Spring Boot DevTools, Spring Web, Spring Data JPA, Spring Security, MySQL Driver, Java-JWT with auth0
 
 ### Prerequisites
+
+![RightRXLogo](Rightrxapp\src\assets\logo3.png)
+
 
 The things you need before installing the software.
 
